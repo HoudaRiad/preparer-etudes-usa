@@ -1,0 +1,334 @@
+/* Style général */
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('/images/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(0, 0, 128, 0.8); 
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Bannière */
+.hero-banner {
+  background-image: url('../images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+}
+
+.hero-banner .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Présentation */
+.presentation {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 40px auto;
+  padding: 30px 40px;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.presentation h2 {
+  color: #004080;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.presentation ol,
+.presentation ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.presentation li {
+  margin-bottom: 8px;
+}
+
+.presentation .final-message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #004080;
+}
+/* Style général des sections universités */
+.university-list {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+}
+
+.university {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.university img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.university h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.university p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+/* Mise en forme du contenu des tests */
+.test-content {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.test-content h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.test-content p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.test-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.test-content ul li {
+  font-size: 1.05em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style du bouton */
+.btn-test {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-test:hover {
+  background-color: #0056b3;
+}
+/* Style pour la section bourses */
+.bourses-content {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.bourses-content h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bourses-content p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.bourses-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.bourses-content ul li {
+  font-size: 1.05em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Bouton appel à l'action */
+.btn-bourse {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-bourse:hover {
+  background-color: #218838;
+}
+/* Contact Section */
+.contact-section {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.contact-list li {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Bouton contact */
+.btn-contact {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.05em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #0056b3;
+}
+/* Contact Section */
+.contact-section {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.contact-list li {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Bouton contact */
+.btn-contact {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.05em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #0056b3;
+}
