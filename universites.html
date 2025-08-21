@@ -1,72 +1,88 @@
 <!DOCTYPE html>
+<html lang="fr">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
   <title>Universités</title>
   <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Barre de navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="tests.html">Tests</a></li>
-      <li><a href="universites.html" class="active">Universités</a></li>
-      <li><a href="bourses.html">Bourses</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Bannière -->
-  <header class="hero-banner">
-    <div class="overlay">
-      <h1>Découvrez les meilleures universités aux États-Unis</h1>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/LOOGOO.png" alt="Logo du site" class="logo">
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tests.html">Tests</a></li>
+        <li><a href="universites.html" class="active">Universités</a></li>
+        <li><a href="bourses.html">Bourses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Section de contenu -->
-  <main class="university-list">
+  <!-- Bannière -->
+  <div class="hero-banner">
+    <div class="overlay">
+      <h1>Découvrez les meilleures universités aux États-Unis</h1>
+      <p>Un tremplin vers l’excellence académique et internationale</p>
+    </div>
+  </div>
 
-    <h2>Universités où vous pouvez postuler</h2>
+  <!-- Section Universités -->
+  <main class="universites-content">
+    <h2>🎓 Nos universités partenaires</h2>
     <p class="intro">
-      Selon vos résultats de tests et votre dossier académique, voici une sélection d'universités réputées 
-      aux États-Unis, connues pour la qualité de leurs formations et leurs opportunités internationales.
+      Grâce à nos partenariats, accédez à une sélection d’universités prestigieuses aux <strong>États-Unis</strong>, reconnues dans le monde entier pour la qualité de leurs formations.
     </p>
 
-    <section class="university">
-      <h3>🎓 Harvard University</h3>
-      <p>
-        Située à Cambridge (Massachusetts), Harvard est mondialement reconnue pour ses programmes de droit, médecine, sciences politiques et affaires.
-      </p>
-      <img src="images/image3.jpeg" alt="Harvard University" class="university-img">
-    </section>
+    <!-- Grille des universités -->
+    <div class="universities-grid">
 
-    <section class="university">
-      <h3>🎓 Stanford University</h3>
-      <p>
-        Basée en Californie, au cœur de la Silicon Valley, Stanford est un leader en innovation, technologies, entrepreneuriat et recherche.
-      </p>
-      <img src="images/image4.jpeg" alt="Stanford University" class="university-img">
-    </section>
+      <div class="university-card">
+        <img src="images/image3.jpeg" alt="Harvard University">
+        <h3>Harvard University</h3>
+        <p>Réputée pour ses programmes en droit, médecine, sciences politiques et affaires.</p>
+      </div>
 
-    <section class="university">
-      <h3>🎓 MIT (Massachusetts Institute of Technology)</h3>
-      <p>
-        Réputé pour son excellence en ingénierie, intelligence artificielle, informatique et économie, MIT est un choix d’élite pour les étudiants ambitieux.
-      </p>
-      <img src="images/image5.jpeg" alt="MIT" class="university-img">
-    </section>
+      <div class="university-card">
+        <img src="images/image4.jpeg" alt="Stanford University">
+        <h3>Stanford University</h3>
+        <p>Basée au cœur de la Silicon Valley, elle excelle en innovation et entrepreneuriat.</p>
+      </div>
 
-    <section class="university">
-      <h3>🎓 University of California, Berkeley</h3>
-      <p>
-        UC Berkeley combine excellence académique, diversité, et engagement social. Ses programmes de sciences, mathématiques et informatique sont de haut niveau.
-      </p>
-      <img src="images/image6.jpeg" alt="UC Berkeley" class="university-img">
-    </section>
+      <div class="university-card">
+        <img src="images/image5.jpeg" alt="MIT">
+        <h3>MIT</h3>
+        <p>Un leader mondial en ingénierie, intelligence artificielle, informatique et économie.</p>
+      </div>
 
+      <div class="university-card">
+        <img src="images/image6.jpeg" alt="UC Berkeley">
+        <h3>UC Berkeley</h3>
+        <p>Une université d’excellence reconnue pour ses sciences, mathématiques et informatique.</p>
+      </div>
+
+    </div>
   </main>
 
- 
+  <footer>
+  <div class="footer-container">
+    <p>&copy; 2025 Préparer ses Études aux USA - Tous droits réservés</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a> <!-- ajout YouTube -->
+      <a href="#"><i class="fab fa-twitter"></i></a> <!-- ajout Twitter -->
+    </div>
+  </div>
+</footer>
+
 
 </body>
 </html>

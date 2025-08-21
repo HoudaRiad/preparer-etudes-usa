@@ -1,64 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>ACCUEIL</title>
-  <link rel="stylesheet" href="style/style.css"> 
   <meta charset="UTF-8">
+  <title>Accueil - Préparer ses Études aux USA</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Barre de navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">ACCUEIL</a></li>
-      <li><a href="tests.html">Tests</a></li>
-      <li><a href="universites.html">Universités</a></li>
-      <li><a href="bourses.html">Bourses</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/LOOGOO.png" alt="Logo du site">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="tests.html">Tests</a></li>
+        <li><a href="universites.html">Universités</a></li>
+        <li><a href="bourses.html">Bourses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Bannière en haut -->
+  <!-- Hero Banner -->
   <div class="hero-banner">
     <div class="overlay">
-      <h1>Étudier aux États-Unis</h1>
+      <h1>Préparez vos études aux USA 🇺🇸</h1>
+      <p>Tests, universités, bourses et accompagnement personnalisé</p>
+      <a href="tests.html" class="btn-cta">Commencer maintenant</a>
     </div>
   </div>
 
-  <!-- Contenu principal -->
-  <main class="presentation">
-    <h2>Présentation de nos services</h2>
-    <p>Bienvenue sur notre plateforme dédiée à l'accompagnement des étudiants souhaitant poursuivre leurs études aux États-Unis. Voici les étapes que vous suivrez :</p>
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img src="images/slide11.jpg" alt="Campus 1"></div>
+      <div class="slide"><img src="images/slide22.jpg" alt="Étudiants"></div>
+      <div class="slide"><img src="images/slide333.jpg" alt="Campus 2"></div>
+    </div>
+  </div>
 
-    <ol>
-      <li><strong>Test de niveau :</strong>  
-        <ul>
-          <li>Avant toute chose, vous passerez un test afin d'évaluer votre niveau académique et linguistique.</li>
-        </ul>
-      </li>
-    
-      <li><strong>Présentation des universités partenaires :</strong>
-        <ul>
-          <li>En fonction de votre profil, nous vous proposerons une sélection d’universités américaines dans lesquelles vous pouvez postuler.</li>
-        </ul>
-      </li>
-    
-      <li><strong>Informations sur les bourses :</strong>
-        <ul>
-          <li>Bourses d’excellence (résultats académiques élevés)</li>
-          <li>Bourses de mérite (engagement, situation financière, etc.)</li>
-        </ul>
-      </li>
-    
-      <li><strong>Contact et accompagnement :</strong>
-        <ul>
-          <li>Vous pourrez nous contacter à tout moment pour plus d’informations ou pour être accompagné dans vos démarches.</li>
-        </ul>
-      </li>
-    </ol>
+  <!-- Vidéo -->
+  <section class="video-section">
+    <h2>🎥 Découvrez notre guide</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/irkB0ZQfazo" title="Guide études USA"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </section>
 
-    <p class="final-message">Nous sommes là pour vous aider à concrétiser votre rêve d’étudier aux USA !</p>
+  <!-- Présentation -->
+  <main>
+    <section class="presentation">
+      <h2> Nos services</h2>
+      <p class="intro">
+        Bienvenue sur notre plateforme dédiée à l’accompagnement des étudiants souhaitant poursuivre leurs études aux <strong>États-Unis</strong>. 
+        Notre mission est de vous guider à chaque étape : tests, choix d’universités, bourses et démarches administratives.
+      </p>
+
+      <!-- Grille étapes -->
+      <div class="steps-grid">
+        <div class="step-card">
+          <h3> Test de niveau</h3>
+          <p>Évaluez vos compétences académiques et linguistiques grâce à un test personnalisé.</p>
+        </div>
+        <div class="step-card">
+          <h3> Universités partenaires</h3>
+          <p>Accédez à une sélection d’universités américaines de renom adaptées à votre profil.</p>
+        </div>
+        <div class="step-card">
+          <h3> Bourses</h3>
+          <p>Découvrez les bourses d’excellence et de mérite pour alléger vos frais d’études.</p>
+        </div>
+        <div class="step-card">
+          <h3> Accompagnement</h3>
+          <p>Bénéficiez de conseils personnalisés pour maximiser vos chances de réussite.</p>
+        </div>
+      </div>
+
+      <p class="conclusion">
+        🚀 Ensemble, concrétisons votre rêve d’étudier aux <strong>États-Unis</strong> !
+      </p>
+    </section>
   </main>
 
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Préparer ses Études aux USA - Tous droits réservés</p>
+      <div class="socials">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/slider.js"></script>
 </body>
 </html>

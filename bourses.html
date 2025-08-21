@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <title>Bourses</title>
   <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="tests.html">Tests</a></li>
-      <li><a href="universites.html">Universités</a></li>
-      <li><a href="bourses.html">Bourses</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/LOOGOO.png" alt="Logo du site" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tests.html">Tests</a></li>
+        <li><a href="universites.html">Universités</a></li>
+        <li><a href="bourses.html" class="active">Bourses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Bannière -->
   <div class="hero-banner">
     <div class="overlay">
       <h1>Bourses d'études</h1>
+      <p>Opportunités pour financer vos études aux États-Unis</p>
     </div>
   </div>
 
   <!-- Contenu principal -->
   <main class="bourses-content">
-    <h2>Bourses d'études aux États-Unis</h2>
+    <h2> Programmes de bourses aux États-Unis</h2>
+    <p class="intro">
+      De nombreuses institutions et organismes offrent des <strong>bourses</strong> afin de soutenir les étudiants internationaux. Voici une sélection des plus populaires :
+    </p>
 
-    <p>Il existe de nombreuses opportunités de bourses pour aider les étudiants internationaux à financer leurs études aux États-Unis. Voici quelques programmes populaires :</p>
+    <!-- Grille de cartes -->
+    <div class="bourses-grid">
+      
+      <div class="bourse-card">
+      
+        <h3> Fulbright Program</h3>
+        <p>Programme prestigieux financé par le gouvernement américain. Il couvre les frais de scolarité, logement et billets d’avion pour les étudiants en master ou doctorat.</p>
+      </div>
 
-    <ul>
-      <li>
-        <strong>Fulbright Program</strong><br>
-        Programme prestigieux financé par le gouvernement américain. Il couvre les frais de scolarité, logement et billets d’avion pour les étudiants en master ou doctorat.
-      </li>
+      <div class="bourse-card">
+        
+        <h3> Universités américaines</h3>
+        <p>Des institutions comme Harvard ou Stanford offrent des <strong>bourses de mérite</strong> et d’excellence académique, accessibles directement via leur site officiel.</p>
+      </div>
 
-      <li>
-        <strong>Bourses des universités américaines</strong><br>
-        De nombreuses universités comme Harvard ou Stanford offrent des aides selon le mérite académique ou les besoins financiers. Il faut postuler directement via leur site officiel.
-      </li>
+      <div class="bourse-card">
+        
+        <h3>🇲🇦 Programmes Maroc-USA</h3>
+        <p>Des partenariats entre le Maroc et les États-Unis permettent aux étudiants marocains d’obtenir des financements. Renseignez-vous auprès du <em>Ministère de l’Enseignement Supérieur</em>.</p>
+      </div>
 
-      <li>
-        <strong>Programmes du gouvernement marocain</strong><br>
-        Certains partenariats permettent aux étudiants marocains d'obtenir des bourses pour l’étranger. Renseignez-vous auprès du Ministère de l’Enseignement Supérieur.
-      </li>
+      <div class="bourse-card">
+       
+        <h3> ONG et fondations</h3>
+        <p>Des organismes comme <strong>AMIDEAST</strong>, <strong>IIE</strong> ou <strong>EducationUSA</strong> proposent des aides financières et un accompagnement personnalisé.</p>
+      </div>
 
-      <li>
-        <strong>Organismes privés et ONG</strong><br>
-        Des fondations comme <em>AMIDEAST</em>, <em>IIE</em> ou <em>EducationUSA</em> offrent également des bourses ou des conseils personnalisés.
-      </li>
-    </ul>
+    </div>
 
-    <a href="contact.html" class="btn-bourse">Demander plus d'informations</a>
+    <!-- Bouton CTA -->
+    <div class="bourses-cta">
+      <a href="contact.html" class="btn-bourse">📩 Demander plus d'informations</a>
+    </div>
   </main>
 
-</body>
-</html>
+  <footer>
+  <div class="footer-container">
+    <p>&copy; 2025 Préparer ses Études aux USA - Tous droits réservés</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a> <!-- ajout YouTube -->
+      <a href="#"><i class="fab fa-twitter"></i></a> <!-- ajout Twitter -->
+    </div>
+  </div>
+</footer>
