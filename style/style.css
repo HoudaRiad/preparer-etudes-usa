@@ -140,7 +140,7 @@ nav ul li a.active::after {
 .hero-banner p {
   font-size: 1.3em;
   margin-bottom: 25px;
-  color: #f8f8f8;
+  color: #FFFFFF;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
@@ -171,6 +171,7 @@ nav ul li a.active::after {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  
 }
 
 .slides {
@@ -742,7 +743,7 @@ footer .socials a:hover {
 }
 
 .contact-info {
-  background: white;
+  background: neutral white;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);

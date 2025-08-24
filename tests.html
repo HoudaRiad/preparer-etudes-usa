@@ -1,104 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <title>Tests</title>
   <link rel="stylesheet" href="style/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="images/LOOGOO.png" alt="Logo du site" class="logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="tests.html" class="active">Tests</a></li>
-        <li><a href="universites.html">Universités</a></li>
-        <li><a href="bourses.html">Bourses</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="logo"><img src="images/LOOGOO.png" alt="Logo du site"></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="tests.html" class="active">Tests</a></li>
+      <li><a href="universites.html">Universités</a></li>
+      <li><a href="bourses.html">Bourses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Bannière -->
-  <div class="hero-banner">
-    <div class="overlay">
-      <h1>Tests de niveau</h1>
-      <p>Évaluez vos compétences avant de postuler</p>
-    </div>
+<div class="hero-banner">
+  <div class="overlay">
+    <h1 style="color:#FFD700;">Tests de niveau</h1>
+    <p>Évaluez vos compétences avant de postuler</p>
   </div>
+</div>
 
-  <!-- Contenu principal -->
-  <main class="tests-content">
-    <h2>📊 Nos principaux tests</h2>
-    <p class="intro">
-      Pour préparer votre admission aux <strong>universités américaines</strong>, vous pouvez passer plusieurs tests de langue et académiques. Voici les plus connus :
-    </p>
+<main class="tests-content">
+  <h2> Nos principaux tests</h2>
+  <p class="intro">Pour préparer votre admission aux <strong>universités américaines</strong>, vous pouvez passer plusieurs tests académiques.</p>
+  <div class="tests-grid">
+    <div class="test-card"><h3>TOEFL</h3><p>Test d’anglais académique reconnu partout.</p></div>
+    <div class="test-card"><h3>IELTS</h3><p>Alternative au TOEFL, accepté par beaucoup d’universités.</p></div>
+    <div class="test-card"><h3>Duolingo English Test</h3><p>Test rapide en ligne, de plus en plus reconnu.</p></div>
+    <div class="test-card"><h3>SAT</h3><p>Évalue mathématiques et lecture, requis pour Bachelor.</p></div>
+    <div class="test-card"><h3>GRE</h3><p>Pour Master/PhD, mesure aptitudes analytiques.</p></div>
+    <div class="test-card"><h3>GMAT</h3><p>Spécial MBA, teste compétences analytiques et logiques.</p></div>
+  </div>
+  <div class="tests-cta"><a href="#" class="btn-test">📝 Commencer un test</a></div>
+</main>
 
-    <!-- Grille des tests -->
-    <div class="tests-grid">
-
-      <div class="test-card">
-     
-        <h3>TOEFL</h3>
-        <p>Le <strong>TOEFL</strong> évalue votre compréhension et expression en anglais académique. Il est largement reconnu par les universités américaines.</p>
-      </div>
-
-      <div class="test-card">
-     
-        <h3>IELTS</h3>
-        <p>L’<strong>IELTS</strong> mesure vos compétences linguistiques à l’oral et à l’écrit. Certaines universités l’acceptent comme alternative au TOEFL.</p>
-      </div>
-
-      <div class="test-card">
-      
-        <h3>Duolingo English Test</h3>
-        <p>Un test <strong>rapide et en ligne</strong> qui gagne en popularité. Il est accepté par de nombreuses universités américaines.</p>
-      </div>
-
-      <div class="test-card">
-      
-        <h3>SAT</h3>
-        <p>Le <strong>SAT</strong> évalue vos connaissances en mathématiques, lecture et écriture. Il est souvent requis pour le <em>Bachelor</em>.</p>
-      </div>
-
-      <div class="test-card">
-       
-        <h3>GRE</h3>
-        <p>Le <strong>GRE</strong> est destiné aux admissions en <em>Master</em> et <em>PhD</em>. Il mesure vos aptitudes analytiques et quantitatives.</p>
-      </div>
-
-      <div class="test-card">
-       
-        <h3>GMAT</h3>
-        <p>Le <strong>GMAT</strong> est requis pour les programmes de <em>MBA</em>. Il évalue vos compétences analytiques et logiques.</p>
-      </div>
-
-    </div>
-
-    <!-- Bouton CTA -->
-    <div class="tests-cta">
-      <a href="#" class="btn-test">📝 Commencer un test d’évaluation</a>
-    </div>
-  </main>
-
- <footer>
+<footer>
   <div class="footer-container">
     <p>&copy; 2025 Préparer ses Études aux USA - Tous droits réservés</p>
     <div class="socials">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a> <!-- ajout YouTube -->
-      <a href="#"><i class="fab fa-twitter"></i></a> <!-- ajout Twitter -->
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </div>
 </footer>
-
 </body>
 </html>

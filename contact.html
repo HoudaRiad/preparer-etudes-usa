@@ -1,91 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Contact</title>
-  <link rel="stylesheet" href="style/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="images/LOOGOO.png" alt="Logo du site" class="logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="tests.html">Tests</a></li>
-        <li><a href="universites.html">Universités</a></li>
-        <li><a href="bourses.html">Bourses</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="logo"><img src="images/LOOGOO.png" alt="Logo du site" /></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="tests.html">Tests</a></li>
+      <li><a href="universites.html">Universités</a></li>
+      <li><a href="bourses.html">Bourses</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Bannière -->
-  <div class="hero-banner">
-    <div class="overlay">
-      <h1>Contactez-nous</h1>
-      <p>Notre équipe est à votre disposition</p>
+<div class="hero-banner">
+  <div class="overlay">
+    <h1 style="color:#FFD700;">Contactez-nous</h1>
+    <p>Notre équipe est à votre disposition</p>
+  </div>
+</div>
+
+<main class="contact-container">
+  <h2>Entrons en contact</h2>
+  <div class="contact-grid">
+    <!-- Infos -->
+    <div class="contact-info">
+      <h3>📍 Nos coordonnées</h3>
+      <ul>
+        <li><strong>Email :</strong> contact@etudierusa.com</li>
+        <li><strong>Téléphone :</strong> +212 622334455</li>
+        <li><strong>Adresse :</strong> Agadir Office, Hay Salam Bloc B Nr 61, Drarga, Agadir, Maroc</li>
+      </ul>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="contact-form">
+      <h3>Envoyez-nous un message</h3>
+      <form>
+        <label>Nom complet</label>
+        <input type="text" placeholder="Votre nom" required />
+
+        <label>Email</label>
+        <input type="email" placeholder="Votre email" required />
+
+        <label>Message</label>
+        <textarea rows="6" placeholder="Votre message..." required></textarea>
+
+        <button type="submit" class="btn-contact">📩 Envoyer</button>
+      </form>
     </div>
   </div>
+</main>
 
-  <!-- Section Contact -->
-  <main class="contact-container">
-    <h2> Entrons en contact</h2>
-    <p class="intro">Vous avez des questions sur les universités, bourses ou démarches d’admission ? N’hésitez pas à nous écrire ou à nous appeler.</p>
-
-    <div class="contact-grid">
-
-      <!-- Infos de contact -->
-      <div class="contact-info">
-        <h3>📍 Nos coordonnées</h3>
-        <ul>
-          <li><strong>Email :</strong> contact@etudierusa.com</li>
-          <li><strong>Téléphone :</strong> +212 622334455</li>
-          <li><strong>Adresse :</strong> Marrakech, Maroc</li>
-        </ul>
-
-        <!-- Carte Google Maps -->
-        <div class="map">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.2910946906273!2d-8.00388968480184!3d31.629472981336065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafeb9a5e09d5af%3A0x6ff5e68e03b0b7a!2sMarrakech!5e0!3m2!1sfr!2sma!4v1676893246572!5m2!1sfr!2sma" 
-            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-
-      <!-- Formulaire -->
-      <div class="contact-form">
-        <h3> Envoyez-nous un message</h3>
-        <form>
-          <label>Nom complet</label>
-          <input type="text" placeholder="Votre nom" required>
-
-          <label>Email</label>
-          <input type="email" placeholder="Votre email" required>
-
-          <label>Message</label>
-          <textarea placeholder="Votre message..." rows="6" required></textarea>
-
-          <button type="submit" class="btn-contact">📩 Envoyer</button>
-        </form>
-      </div>
-
-    </div>
-  </main>
-
-  <footer>
+<footer>
   <div class="footer-container">
     <p>&copy; 2025 Préparer ses Études aux USA - Tous droits réservés</p>
     <div class="socials">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a> <!-- ajout YouTube -->
-      <a href="#"><i class="fab fa-twitter"></i></a> <!-- ajout Twitter -->
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </div>
 </footer>
