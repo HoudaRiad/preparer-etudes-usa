@@ -7,6 +7,16 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link rel="icon" href="images/favicon1.png" type="image/png">
 </head>
+<!-- Bouton Retour en haut -->
+<button id="backToTop">⬆</button>
+
+<!-- Charger EmailJS (la bibliothèque officielle) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- Ton fichier perso -->
+<script src="js/email.js"></script>
+
+
 <body>
 <header>
   <div class="logo"><img src="images/LOOGOO.png" alt="Logo du site" /></div>
@@ -19,11 +29,13 @@
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
+  <!-- Bouton Dark Mode -->
+  <button id="darkModeToggle">🌙 Mode sombre</button>
 </header>
 
 <div class="hero-banner">
   <div class="overlay">
-    <h1 style="color:#FFD700;">Contactez-nous</h1>
+    <h1 style="color:#FFFD700;">Contactez-nous</h1>
     <p>Notre équipe est à votre disposition</p>
   </div>
 </div>
@@ -31,27 +43,40 @@
 <main class="contact-container">
   <h2>Entrons en contact</h2>
   <div class="contact-grid">
+
+    <!-- Coordonnées -->
     <div class="contact-info">
       <h3>📍 Nos coordonnées</h3>
       <ul>
-        <li><strong>Email :</strong> <a href="mailto:contact@etudierusa.com">contact@etudierusa.com</a></li>
-        <li><strong>Téléphone :</strong> <a href="tel:+212622334455">+212 693593805</a></li>
+        <li><strong>Email :</strong> <a href="mailto:houda.raid2004@gmail.com">houda.raid2004@gmail.com</a></li>
+        <li><strong>Téléphone :</strong> <a href="tel:+212693593805">+212 693593805</a></li>
         <li><strong>Adresse :</strong> Agadir Office, Hay Salam Bloc B Nr 61, Drarga, Agadir, Maroc</li>
       </ul>
     </div>
 
+    <!-- Formulaire de contact -->
     <div class="contact-form">
       <h3>Envoyez-nous un message</h3>
-      <form>
+      <form id="contact-form">
         <label>Nom complet</label>
-        <input type="text" placeholder="Votre nom" required />
+        <input type="text" name="from_name" placeholder="Votre nom" required />
+        <small id="error-name" class="error"></small>
+
         <label>Email</label>
-        <input type="email" placeholder="Votre email" required />
+        <input type="email" name="reply_to" placeholder="Votre email" required />
+        <small id="error-email" class="error"></small>
+
         <label>Message</label>
-        <textarea rows="6" placeholder="Votre message..." required></textarea>
+        <textarea name="message" rows="6" placeholder="Votre message..." required></textarea>
+        <small id="error-message" class="error"></small>
+
         <button type="submit" class="btn-contact">📩 Envoyer</button>
       </form>
+
+      <!-- Message de statut -->
+      <p id="form-status"></p>
     </div>
+
   </div>
 </main>
 
@@ -66,5 +91,11 @@
     </div>
   </div>
 </footer>
+
+<!-- Script Dark Mode -->
+<script src="js/main.js"></script>
+
+
+
 </body>
 </html>
